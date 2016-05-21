@@ -11,7 +11,6 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.NavUtils;
 import android.support.v4.app.TaskStackBuilder;
@@ -79,8 +78,7 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         activityComponent = Injector.obtainAppComponent(this).plus(new ActivityModule(this));
-
-        Injector.obtainAppComponent(this).inject(this);
+        activityComponent.inject(this);
 
         bindConnectivityPublishSubject();
     }

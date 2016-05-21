@@ -21,6 +21,8 @@ public class MainActivity extends BaseActivity {
 
         setContentView(R.layout.activity_main);
 
+        activityComponent.inject(this);
+
         unbinder = ButterKnife.bind(this);
     }
 }
