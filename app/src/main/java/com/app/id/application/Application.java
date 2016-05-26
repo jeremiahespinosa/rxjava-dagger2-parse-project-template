@@ -69,6 +69,9 @@ public class Application extends android.app.Application implements Thread.Uncau
         setupLeakCanary();
 
         createComponent();
+
+        networkConnected = networkBroadcastReceiver.isNetworkConnected();
+        wifiConnected = networkBroadcastReceiver.isWifiConnected();
     }
 
     @Override
