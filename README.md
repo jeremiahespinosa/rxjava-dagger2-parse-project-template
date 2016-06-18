@@ -2,16 +2,16 @@
 
 All dependencies added to this project template:
 
- - Butterknife (8.0)
- - Dagger 2 (2.2)
- - Parse (1.13.0)
- - RxJava (1.1.5)
- - RxAndroid (1.2.0)
+ - Butterknife (8.1.0)
+ - Dagger 2 (2.5)
+ - Parse (1.13.1)
+ - RxJava (1.1.6)
+ - RxAndroid (1.2.1)
  - Stetho (1.3.1)
  - LeakCanary (1.4-beta2)
  - Calligraphy (2.2.0)
  - CircleImageView (2.0.0)
- - Support Libraries (23.4.0)
+ - Support Libraries (24.0.0)
   - support-v4
   - appcompat-v7
   - recyclerview-v7
